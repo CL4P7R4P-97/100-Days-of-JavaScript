@@ -38,4 +38,62 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+
+}
+
+.counter-div{
+
+  width: 40rem;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/* targeting the direct children of counter-div */
+.counter-div > * {
+
+margin-bottom : 2rem;
+
+}
+
+.count {
+  font-size:  4rem;
+}
+
+
+.buttons button {
+
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+}
+
+button.subtract {
+
+  background-color: orangered;
+}
+
+button.reset {
+
+  background-color:var(--white);
+  color: var(--black);
+}
+
+button.add {
+
+  background-color:green;
+  
 }
